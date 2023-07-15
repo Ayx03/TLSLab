@@ -1,3 +1,9 @@
+// Node.js 本身不支持在同一个端口上同时处理 HTTP 和 HTTPS 请求。
+// 通常情况下，HTTP 服务器监听 80 端口，而 HTTPS 服务器监听 443 端口。
+// 要在同一个端口上处理 HTTP 和 HTTPS 请求，需要使用反向代理服务器或负载均衡器来实现。
+
+
+
 const http = require('http');
 const https = require('https');
 const fs = require('fs');
